@@ -28,7 +28,7 @@ body {
 .screen {
   background-color: #414141;
   border-radius: 10px;
-  color: #0314aa;
+  color: #596aff;
   padding: 15px;
   grid-column: 1 / 5;
 }
@@ -63,6 +63,7 @@ body {
 }
 
 .btn-cal > .equal {
+  right: 0px;
   background-color: #ff8888;
 }
 
