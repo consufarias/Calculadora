@@ -11,7 +11,12 @@ function clean(){
 
 function calculate(){
     try {
-        screen.value = eval(screen.value);
+        if (screen.value.includes("%")) {
+            const numbers = screen.value.split('%')
+            screen.value = Math.round(eval(numbers[0] + '*' + numbers[1] + '/100'))
+        } else {
+            screen.value = eval(screen.value);
+        }
     } catch (error) {
         screen.value = 'Error';
         setTimeout(() => {
